@@ -8,7 +8,7 @@ function App() {
   return (
     <div className="bg-[#0a0f1a] min-h-screen font-normal">
       {/* i want to add club logo at top right */}
-      <div className="sticky top-0 left-0 p-4 z-[100] flex justify-end">
+      <div className="absolute top-0 right-0 p-4 z-[100]">
         <img src={heroSectionData.logo} alt="Club Logo" className="w-16 h-16" />
       </div>
 
