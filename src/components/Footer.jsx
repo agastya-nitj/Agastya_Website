@@ -7,7 +7,7 @@ export default function Footer() {
   // Agastya social media links
   const agastyaSocials = {
     linkedin: "https://www.linkedin.com/company/the-agastya/",
-    instagram: "https://www.instagram.com/agastya.club/",
+    instagram: "https://www.instagram.com/the_agastya_nitj/",
     email: "agastya@nitj.ac.in"
   };
 
@@ -44,9 +44,16 @@ export default function Footer() {
               Get In Touch
             </h3>
             <div className="space-y-3">
-              <div className="flex items-center gap-2 text-gray-400 text-sm">
-                <MapPin className="w-4 h-4 text-cyan-400" />
-                <span>NIT Jalandhar, Punjab, India</span>
+              <div className="flex items-center gap-2">
+                <a
+                  href={agastyaSocials.linkedin}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="flex items-center gap-2 text-gray-400 hover:text-cyan-300 transition-colors text-sm"
+                >
+                  <Linkedin className="w-4 h-4 text-cyan-400" />
+                  <span>LinkedIn</span>
+                </a>
               </div>
               <div className="flex items-center gap-2">
                 <a
