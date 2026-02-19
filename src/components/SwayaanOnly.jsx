@@ -17,7 +17,7 @@ const SwayaanOnly = () => {
           animate={{ opacity: 1, y: 0 }}
           className="text-center mb-20"
         >
-          <h1 className="text-6xl md:text-8xl font-special font-bold text-white tracking-widest mb-4">
+          <h1 className="text-4xl md:text-6xl font-special font-bold text-white tracking-widest mb-4">
             <span className="text-amber-400">SWAYAAN</span> PROJECT
           </h1>
           <p className="text-gray-400 text-lg md:text-xl max-w-2xl mx-auto">
@@ -33,7 +33,7 @@ const SwayaanOnly = () => {
           viewport={{ once: true }}
           className="mb-16 p-8 rounded-lg bg-gradient-to-br from-amber-500/10 to-orange-600/10 border border-amber-400/30"
         >
-          <h2 className="text-3xl font-special font-bold text-amber-400 mb-4">About Swayaan</h2>
+          <h2 className="text-2xl md:text-3xl font-special font-bold text-amber-400 mb-4">About Swayaan</h2>
           <p className="text-gray-300 leading-relaxed">
             Swayaan represents the pinnacle of autonomous drone engineering at NIT Jalandhar. 
             Our multidisciplinary team works relentlessly to push the boundaries of what's possible 
@@ -43,7 +43,7 @@ const SwayaanOnly = () => {
 
         {/* Project Gallery */}
         <div className="mb-12">
-          <h2 className="text-4xl font-special font-bold text-white mb-8 text-center">
+          <h2 className="text-3xl md:text-4xl font-special font-bold text-white mb-8 text-center">
             Project <span className="text-amber-400">Gallery</span>
           </h2>
           
