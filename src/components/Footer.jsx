@@ -12,7 +12,7 @@ export default function Footer() {
   };
 
   return (
-    <footer className="bg-[#0a0f1a] border-t border-cyan-500/20 py-12 px-4 md:px-8 relative z-10">
+    <footer className="site-footer bg-[#0a0f1a] border-t border-cyan-500/20 py-2 px-4 md:px-8 relative z-10">
       <div className="max-w-7xl mx-auto">
         {/* Main Footer Content */}
         <div className="grid grid-cols-1 md:grid-cols-2 gap-12 mb-12">
@@ -24,7 +24,7 @@ export default function Footer() {
             viewport={{ once: true }}
           >
             <h3 className="text-xl font-special font-bold text-cyan-400 mb-4">
-              Agastya Club NITJ
+              Agastya — उड़ान का विज्ञान
             </h3>
             <p className="text-gray-400 text-sm leading-relaxed">
               Pioneering innovation in autonomous flight research and aerodynamic 
@@ -84,9 +84,7 @@ export default function Footer() {
             <p>
               &copy; {currentYear} Agastya Club NITJ. All rights reserved.
             </p>
-            <p className="text-xs mt-1">
-              Designed & developed with innovation and passion.
-            </p>
+        
           </div>
 
           {/* Social Links */}
