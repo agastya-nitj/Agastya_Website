@@ -48,13 +48,13 @@ export default function Footer() {
           {/* COLUMN 2: MISSION INFO */}
           <div className="flex flex-col items-center justify-center text-center space-y-6">
             <motion.div 
-              whileHover={{ scale: 1.05 }}
-              className="cursor-pointer"
-              onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
-            >
-              <h2 className="text-3xl md:text-4xl font-special font-bold text-white tracking-[0.3em]">
-                AGASTYA
-              </h2>
+                whileHover={{ scale: 1.05 }}
+                className="cursor-pointer"
+                onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
+              >
+                <h2 className="text-2xl sm:text-3xl md:text-4xl font-special font-bold text-white tracking-[0.3em]">
+                  AGASTYA
+                </h2>
               <div className="h-0.5 w-full bg-gradient-to-r from-transparent via-amber-500 to-transparent mt-1" />
               <p className="text-[20px] text-amber-500 mt-2">
                 उड़ान का विज्ञान

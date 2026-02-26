@@ -81,8 +81,8 @@ export default function Hero() {
       </div>
 
       {/* Moon - Reduced Size (w-32 md:w-56) */}
-      <motion.div 
-        className="absolute left-1/2 top-[10%] md:top-[5%] z-10 w-32 md:w-56 -translate-x-1/2"
+        <motion.div 
+        className="absolute left-1/2 top-[10%] md:top-[5%] z-10 w-20 sm:w-28 md:w-56 -translate-x-1/2"
         style={{ y: moonY }}
       >
         <img src="/moon.png" alt="Moon" className="w-full h-auto drop-shadow-[0_0_40px_rgba(200,200,255,0.4)]" />
@@ -99,7 +99,7 @@ export default function Hero() {
 
       {/* Landing Drone - Rotated and Hovering */}
       <motion.div 
-        className="absolute top-[15%] left-[10%] md:left-[25%] z-50 w-24 md:w-36"
+        className="absolute top-[15%] left-[10%] md:left-[25%] z-50 w-20 sm:w-24 md:w-36"
         style={{ y: droneY, scale: droneScale, rotate: -25 }}
       >
         {/* The image handles the continuous hover animation while the parent handles the scroll */}
@@ -115,13 +115,13 @@ export default function Hero() {
 
       {/* Club Name & Text - Moved lower to 65vh */}
       <motion.div 
-        className="absolute top-[50vh] left-0 right-0 z-40 flex flex-col items-center text-center px-4"
+        className="absolute top-[45vh] sm:top-[48vh] md:top-[50vh] left-0 right-0 z-40 flex flex-col items-center text-center px-4"
         style={{ y: textY, opacity: textOpacity }}
       >
-        <h1 className="text-5xl md:text-8xl font-bold text-white tracking-widest drop-shadow-lg font-special">
+        <h1 className="text-2xl sm:text-3xl md:text-5xl lg:text-8xl font-bold text-white tracking-widest drop-shadow-lg font-special">
           {data.clubName}
         </h1>
-        <p className="mt-4 text-lg md:text-2xl text-cyan-200 tracking-wide font-normal">
+        <p className="mt-4 text-sm sm:text-base md:text-2xl text-cyan-200 tracking-wide font-normal">
           {data.clubTagLine}
         </p>
       </motion.div>
@@ -136,7 +136,7 @@ export default function Hero() {
       
       {/* Pilot / Person standing on cliff - Layered at z-30 */}
       <motion.div 
-        className="absolute bottom-[0%] right-[0%] md:right-[0%] z-[70] w-32 md:w-1/2"
+        className="absolute bottom-[0%] right-[0%] md:right-[0%] z-[70] w-32 md:w-56"
         style={{ y: pilotY }}
       >
         <img src="/pilot_.png" alt="Drone Pilot on Cliff" className="w-full h-auto" />
