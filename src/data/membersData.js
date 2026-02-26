@@ -1,8 +1,3 @@
-// how to edit this file:
-// 1. add member data in the form of {id, name, role, image, team, socials} in the membersData array
-// 2. team can be: "core", "social", "technical", "marketing"
-// 3. make sure the image is added in the public/members folder and the path is correct in the data array
-
 export default [
   { id: 1, name: "Akshat Agrawal", role: "member", team: "marketing", image: "/members/Akshat Agrawal.png", socials: { linkedin: "", instagram: "" } },
   { id: 2, name: "Amrit Pal", role: "Gen Alpha Social Media Lead", team: "technical", image: "/members/Amrit Pal.png", socials: { linkedin: "https://www.linkedin.com/in/amritpalnitj/", instagram: "https://www.instagram.com/" } },

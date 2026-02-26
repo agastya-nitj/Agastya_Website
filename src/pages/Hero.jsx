@@ -1,6 +1,6 @@
 import { useEffect, useState, useRef } from "react";
 import { motion, useScroll, useTransform } from "framer-motion";
-import { Meteors } from "./Meteors";
+import { Meteors } from "../components/Meteors";
 import data from "../data/heroSectionData";
 
 // Sub-component for individual stars to safely use hooks

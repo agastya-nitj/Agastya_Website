@@ -21,30 +21,30 @@ export default [
   {
     id: 1,
     name: "Dr. OP Verma",
-    role: "Faculty Coordinator",
+    role: "Coordinator",
     image: "/Coordinators/c1.png",
     socials: { 
-        linkedin: "https://departments.nitj.ac.in/dept/ice/Faculty/6430446638bff038a7807a2f", 
+        linkedin: "https://www.linkedin.com/in/dr-om-prakash-verma-800477139/?originalSubdomain=in", 
         mail: "vermaop@nitj.ac.in" 
     },
   },
   {
     id: 2,
     name: "Dr Sukwinder Singh",
-    role: "Faculty Coordinator",
+    role: "Coordinator",
     image: "/Coordinators/c2.jpeg",
     socials: { 
-        linkedin: "https://departments.nitj.ac.in/dept/ece/Faculty/6430446538bff038a78077c1", 
+        linkedin: "https://www.linkedin.com/in/sukwinder-singh/?originalSubdomain=in", 
         mail: "sukwinders@nitj.ac.in" 
     },
   },
   {
     id: 3,
     name: "Dr. Manjeet Singh",
-    role: "Faculty Coordinator",
+    role: "Coordinator",
     image: "/Coordinators/c3.jpeg",
     socials: { 
-        linkedin: "https://departments.nitj.ac.in/dept/ece/Faculty/6430446d38bff038a78089fb", 
+        linkedin: "https://www.linkedin.com/in/manjeet-singh-121233a0/?originalSubdomain=in", 
         mail: "singhm@nitj.ac.in" },
   }
 ];
