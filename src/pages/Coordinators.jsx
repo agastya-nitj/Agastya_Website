@@ -86,7 +86,7 @@ export default function Coordinators() {
               System_Command_Personnel
             </span>
           </div>
-          <h2 className="text-5xl md:text-6xl font-bold font-special tracking-widest text-white/90">
+          <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold font-special tracking-widest text-white/90">
             THE <span className="text-amber-400">VISIONARIES</span>
           </h2>
         </div>
@@ -129,7 +129,7 @@ export default function Coordinators() {
               {/* CARD CONTAINER */}
               <motion.div 
                 whileHover={{ scale: 1.02 }}
-                className="relative w-[280px] aspect-[3/4] bg-[#131b2e]/40 backdrop-blur-md border border-white/10 overflow-hidden"
+                className="relative w-56 sm:w-64 md:w-[280px] aspect-[3/4] bg-[#131b2e]/40 backdrop-blur-md border border-white/10 overflow-hidden"
               >
                 {/* Image: FULL COLOR as requested */}
                 <img
