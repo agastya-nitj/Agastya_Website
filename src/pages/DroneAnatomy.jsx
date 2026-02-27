@@ -63,9 +63,9 @@ const Hotspot = ({ data, active, onClick }) => {
       <motion.div
         animate={{ y: [0, -8, 0] }}
         transition={{ duration: 2, repeat: Infinity, ease: "easeInOut" }}
-        className="mb-2 bg-amber-500 text-black px-2 py-1 rounded-md flex items-center justify-center shadow-[0_0_15px_rgba(245,158,11,0.5)]"
+        className="mb-2 bg-amber-500 text-black px-1.5 py-0.5 sm:px-2 sm:py-1 rounded-md flex items-center justify-center shadow-[0_0_15px_rgba(245,158,11,0.5)] text-[10px] sm:text-xs md:text-sm lg:text-base"
       >
-        <span className="font-bold text-xs">! {data.title}</span>
+        <span className="font-bold">! {data.title}</span>
       </motion.div>
 
       <div className="relative flex items-center justify-center">
