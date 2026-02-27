@@ -2,30 +2,24 @@ import { useState, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import data from "../data/aboutUsData";
 
-export default function About() {
+export default function Events() {
   const [activeIndex, setActiveIndex] = useState(0);
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
 
-  // Notice the 'images' array instead of a single 'image' string
-  const events = data
+  const events = data;
 
-  // Reset the image index back to 0 whenever the user clicks a new category
   useEffect(() => {
     setCurrentImageIndex(0);
   }, [activeIndex]);
 
-  // Set up the 3-second automatic image rotation
   useEffect(() => {
     const currentImagesLength = events[activeIndex].images.length;
-    
-    // If there's only 1 image, no need to set an interval
     if (currentImagesLength <= 1) return;
 
     const intervalId = setInterval(() => {
       setCurrentImageIndex((prevIndex) => (prevIndex + 1) % currentImagesLength);
-    }, 3000); // 3000ms = 3 seconds
+    }, 3000);
 
-    // Cleanup the interval when the component unmounts or activeIndex changes
     return () => clearInterval(intervalId);
   }, [activeIndex, events]);
 
@@ -35,26 +29,20 @@ export default function About() {
       id="events"
     >
       <div className="container mx-auto px-6 md:px-12 max-w-7xl">
-        
-        {/* Header */}
-        <div className="mb-16 md:mb-24">
-          <h2 className="text-5xl md:text-7xl font-bold font-special tracking-widest text-white/90">
+        <div className="mb-12 md:mb-24">
+          <h2 className="text-3xl md:text-5xl lg:text-7xl font-bold font-special tracking-widest text-white/90">
             OUR <span className="text-amber-400">EVENTS</span>
           </h2>
           <div className="h-1 w-24 bg-amber-400 mt-6 mb-4 rounded-full"></div>
-          <p className="text-gray-300 text-lg md:text-xl font-normal tracking-wide uppercase">
+          <p className="text-gray-300 text-sm sm:text-base md:text-lg font-normal tracking-wide uppercase">
             Milestones in Aerodynamics & Flight
           </p>
         </div>
 
-        {/* Main Split Layout */}
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-20 items-center">
-          
-          {/* Left Column: Cinematic Image Display */}
           <div className="lg:col-span-7 relative aspect-[4/3] md:aspect-video lg:aspect-[4/3] rounded-2xl overflow-hidden shadow-2xl shadow-black/50 border border-white/10 group">
             <AnimatePresence mode="wait">
               <motion.img
-                // The key combines activeIndex and currentImageIndex so it triggers animation on both changes
                 key={`${activeIndex}-${currentImageIndex}`}
                 src={events[activeIndex].images[currentImageIndex]}
                 alt={events[activeIndex].title}
@@ -65,11 +53,9 @@ export default function About() {
                 className="absolute inset-0 w-full h-full object-cover"
               />
             </AnimatePresence>
-            
-            {/* Elegant overlay gradient */}
+
             <div className="absolute inset-0 bg-gradient-to-t from-[#0a0f1a] via-transparent to-transparent opacity-80"></div>
-            
-            {/* Image Label */}
+
             <div className="absolute bottom-8 left-6 right-6">
               <motion.p 
                 key={`subtitle-${activeIndex}`}
@@ -91,7 +77,6 @@ export default function About() {
               </motion.h3>
             </div>
 
-            {/* Dynamic Progress Dots for the images */}
             <div className="absolute bottom-4 left-6 flex gap-2">
               {events[activeIndex].images.map((_, idx) => (
                 <div 
@@ -104,7 +89,6 @@ export default function About() {
             </div>
           </div>
 
-          {/* Right Column: Interactive Event List */}
           <div className="lg:col-span-5 flex flex-col gap-2">
             {events.map((event, index) => {
               const isActive = index === activeIndex;
@@ -129,7 +113,6 @@ export default function About() {
                     </h4>
                   </div>
 
-                  {/* Expandable Description */}
                   <AnimatePresence>
                     {isActive && (
                       <motion.div
