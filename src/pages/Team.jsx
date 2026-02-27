@@ -10,6 +10,7 @@ import {
   useMotionValue
 } from "framer-motion";
 import membersData, { priorityMembers } from "../data/membersData";
+import { Linkedin, Instagram } from "lucide-react";
 import heroSectionData from "../data/heroSectionData";
 
 // --- Card Component ---
@@ -58,9 +59,33 @@ const MemberCard = ({ member, direction }) => {
         <h3 className="text-white font-bold font-special text-[10px] sm:text-xs md:text-sm lg:text-base tracking-wide truncate drop-shadow-md">
           {member.name}
         </h3>
-        <p className="text-amber-400 text-[8px] sm:text-[9px] md:text-[10px] lg:text-xs font-semibold uppercase tracking-wider truncate mt-0.5">
-          {member.role}
-        </p>
+        <div className="mt-2 flex items-center gap-2">
+          {member.socials?.linkedin ? (
+            <button
+              aria-label={`${member.name} LinkedIn`}
+              onClick={(e) => {
+                e.stopPropagation();
+                window.open(member.socials.linkedin, "_blank", "noopener,noreferrer");
+              }}
+              className="p-1 rounded-full bg-white/5 hover:bg-amber-400/90 transition-colors"
+            >
+              <Linkedin size={16} className="text-white drop-shadow-sm" />
+            </button>
+          ) : null}
+
+          {member.socials?.instagram ? (
+            <button
+              aria-label={`${member.name} Instagram`}
+              onClick={(e) => {
+                e.stopPropagation();
+                window.open(member.socials.instagram, "_blank", "noopener,noreferrer");
+              }}
+              className="p-1 rounded-full bg-white/5 hover:bg-yellow-500/90 transition-colors"
+            >
+              <Instagram size={16} className="text-white drop-shadow-sm" />
+            </button>
+          ) : null}
+        </div>
       </div>
     </div>
   );
