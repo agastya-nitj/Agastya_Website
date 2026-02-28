@@ -29,9 +29,10 @@ const members = [
   { id: 28, name: "Simran Rawat", role: "member", team: "social", image: "/members/Simran Rawat.jpeg", socials: { linkedin: "https://www.linkedin.com/in/pradeep-kumar-awasthi-9313a2280/", instagram: "https://www.instagram.com/" }, year: 2025 },
   { id: 29, name: "Bhavya Issrani", role: "member", team: "social", image: "/members/Bhavya Issarani.jpeg", socials: { linkedin: "https://www.linkedin.com/in/pradeep-kumar-awasthi-9313a2280/", instagram: "https://www.instagram.com/" }, year: 2025 },
   { id: 30, name: "Pratham Namdev", role: "member", team: "social", image: "/members/Pratham Namdev.jpeg", socials: { linkedin: "https://www.linkedin.com/in/pradeep-kumar-awasthi-9313a2280/", instagram: "https://www.instagram.com/" }, year: 2024 },
-  { id: 31, name: "Pradeep Kumar Awasthi", role: "Gen Alpha Technical Lead", team: "technical", image: "/members/Pradeep Kumar Awasthi.jpeg", socials: { linkedin: "https://www.linkedin.com/in/pradeep-kumar-awasthi-9313a2280/", instagram: "https://www.instagram.com/" }, year: 2025 },
+  { id: 31, name: "Pradeep Kumar Awasthi", role: "Gen Alpha Technical Lead", team: "technical", image: "/members/Pradeep Kumar Awasthi.jpeg", socials: { linkedin: "https://www.linkedin.com/in/pradeep-kumar-awasthi-9313a2280/", instagram: "https://www.instagram.com/p.awasthi_18/" }, year: 2024 },
   { id: 32, name: "Naveen Yadav", role: "Gen Alpha Social Media Lead", team: "social", image: "/members/Naveen Yadav.jpeg", socials: { linkedin: "https://www.linkedin.com/in/naveenkumar5595/", instagram: "https://www.instagram.com/" }, year: 2024 },
   { id: 33, name: "Aman Kumar", role: "member", team: "technical", image: "/members/Aman Kumar.jpeg", socials: { linkedin: "https://www.linkedin.com/in/naveenkumar5595/", instagram: "https://www.instagram.com/" }, year: 2025 },
+  { id: 34, name: "Akash Silapara Setty", role: "member", team: "core", image: "/members/Akash.jpeg", socials: { linkedin: "https://www.linkedin.com/in/akash-silapara-setty-82a7b7279?utm_source=share_via&utm_content=profile&utm_medium=member_android", instagram: "https://www.instagram.com/akash_.setty?igsh=N256OTFmZmwycTg=" }, year: 2021 },
 
 ];
 
