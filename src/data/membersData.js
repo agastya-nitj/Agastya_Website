@@ -42,7 +42,7 @@ const members = [
   { id: 41, name: "Gourav Aggarwal", team: "marketing", image: "/members/Gourav Aggarwal.png", socials: { linkedin: "https://www.linkedin.com/in/gourav-aggarwal-5618ab374/", instagram: "https://www.instagram.com/am_gourxv/" }, year: 2025 },
   { id: 42, name: "Ankit", team: "marketing", image: "/members/Ankit.png", socials: { linkedin: "https://www.linkedin.com/in/ankit-sheoran-2487a8306/", instagram: "https://www.instagram.com/ankit540514/" }, year: 2025 },
   { id: 43, name: "Abhishek Kumar", team: "technical", image: "/members/Abhishek kumar.png", socials: { linkedin: "https://www.linkedin.com/in/abhishek-kumar-853737332/", instagram: "https://www.instagram.com/abhishek_nitian_29/" }, year: 2025 },
-  { id: 44, name: "Medu", team: "social", image: "/members/Medu.png", socials: { linkedin: "https://www.linkedin.com/in/umed-bhati-75ab11383/", instagram: "" }, year: 2022 },
+  { id: 44, name: "Umed Bhati", team: "social", image: "/members/Medu.png", socials: { linkedin: "", instagram: "" }, year: 2022 },
   { id: 45, name: "Chaitanya Anand", team: "marketing", image: "/members/Chaitanya Anand.png", socials: { linkedin: "", instagram: "https://www.instagram.com/itzz.chaitanyaanand/" }, year: 2025 },
   { id: 46, name: "Atharv Agarwal", team: "marketing", image: "/members/Atharv Agarwal.png", socials: { linkedin: "https://www.linkedin.com/in/atharv-agrawal-896244377/", instagram: "https://www.instagram.com/atharv.nxt/" }, year: 2025 },
   { id: 47, name: "Suraj Kumar", team: "technical", image: "/members/Suraj Kumar.png", socials: { linkedin: "https://www.linkedin.com/in/suraj-kumar-34313b3a5/", instagram: "https://www.instagram.com/suraj_00ku/" }, year: 2025 },
