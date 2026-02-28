@@ -63,6 +63,7 @@ const processedMembers = [];
 
 members.forEach((m) => {
   const diff = currYr - m.year;
+  if (diff === 1) return; // First year has been removed now, later we can add if we want after Utkansh
   
   if (diff > 4) {
     return;
