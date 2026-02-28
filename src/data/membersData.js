@@ -59,28 +59,25 @@ const order = [
 
 const currYr = new Date().getFullYear();
 
-const processedMembers = [];
+const processedMembers = members
+  .filter(m => {
+    const diff = currYr - m.year;
+    return diff !== 1 && diff <= 4;
+  })
+  .flatMap(m => {
+    const diff = currYr - m.year;
 
-members.forEach((m) => {
-  const diff = currYr - m.year;
-  if (diff === 1) return; // First year has been removed now, later we can add if we want after Utkansh
-  
-  if (diff > 4) {
-    return;
-  }
-  
-  if (diff === 4) {
-    // 4th yr: move entirely to core (removed from original team)
-    processedMembers.push({ ...m, team: "core" });
-  } else if (diff === 3) {
-    // 3rd yr: keep in original team AND add to core
-    processedMembers.push(m);
-    processedMembers.push({ ...m, id: `${m.id}_core`, team: "core" }); 
-  } else {
-    // 1st & 2nd yr: original team only
-    processedMembers.push(m);
-  }
-});
+    if (diff === 4)
+      return [{ ...m, team: "core" }];
+
+    if (diff === 3)
+      return [
+        m,
+        { ...m, id: `${m.id}_core`, team: "core" }
+      ];
+
+    return [m];
+  });
 
 // Sort based on order array
 processedMembers.sort((a, b) => {
