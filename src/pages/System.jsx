@@ -1,6 +1,7 @@
 import React, { useState, useEffect, useRef } from "react";
 import { motion, AnimatePresence } from "framer-motion";
-import { Target, Eye, Zap, Terminal as TerminalIcon, Activity, Box, Cpu } from "lucide-react";
+import { Target, Eye, Zap, Terminal as TerminalIcon, Activity, Box, Cpu, ArrowRight } from "lucide-react";
+import { Link } from "react-router-dom";
 
 const systemData = {
   radar: [
@@ -93,7 +94,7 @@ ${systemData.unique
   }, [scanAngle]);
 
   return (
-    <div ref={containerRef} className="min-h-screen bg-[#070b14] text-white p-4 md:p-12 font-mono overflow-hidden relative selection:bg-cyan-500/30">
+    <div ref={containerRef} id="mission-preview" className="min-h-screen bg-[#070b14] text-white p-4 md:p-12 font-mono overflow-hidden relative selection:bg-cyan-500/30">
       
       {/* Background Ambience */}
       <div className="absolute inset-0 bg-[radial-gradient(circle_at_20%_30%,_#1e293b_0%,_transparent_50%)] opacity-40 pointer-events-none" />
@@ -221,7 +222,7 @@ ${systemData.unique
             </div>
           </div>
 
-          {/* 2. DECORATIVE DATA STRIPS */}
+          {/* 2. DECORATIVE DATA STRIPS & CTA */}
           <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
             {[ {label: 'Aerodynamics', val: '98%'}, {label: 'Autonomy', val: 'Active'}, {label: 'Sensors', val: 'Ready'}, {label: 'Sync', val: 'Online'} ].map((stat, idx) => (
               <div key={idx} className="bg-white/5 border border-white/5 p-4 rounded-xl flex flex-col items-center">
@@ -229,6 +230,16 @@ ${systemData.unique
                 <span className="text-xs text-cyan-400 font-bold">{stat.val}</span>
               </div>
             ))}
+          </div>
+
+          <div className="pt-2 flex justify-end">
+            <Link
+              to="/about"
+              className="inline-flex items-center gap-2 text-xs font-special font-bold text-amber-400 hover:text-white uppercase tracking-widest transition-colors py-2 px-4 rounded-lg bg-white/5 border border-amber-400/30 hover:border-amber-400"
+            >
+              <span>EXPLORE FULL MANIFESTO & STORY</span>
+              <ArrowRight className="w-3.5 h-3.5" />
+            </Link>
           </div>
         </div>
       </div>
